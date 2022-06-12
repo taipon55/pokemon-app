@@ -3,7 +3,8 @@ import Link from "next/link";
 export function Pokemon({ pokemon }) {
   return (
     <>
-      <Link href={"/pokestatus/PokemonCard"}>
+      {/* リンク先を決める */}
+      <Link href={"./components/Pokemoncard"}>
         <div className="pokemon">
           <div className="pokemon-number">
             <p>{pokemon.number}</p>
